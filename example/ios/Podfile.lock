@@ -1,0 +1,176 @@
+PODS:
+  - Flutter (1.0.0)
+  - mob_sharesdk (4.4.2):
+    - mob_sharesdk/ShareSDK (= 4.4.2)
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDK (4.4.2):
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKExtension (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/DingTalk (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Douyin (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Dropbox (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Evernote (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Facebook (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Flickr (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/GooglePlus (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Instagram (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Instapaper (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Kakao (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/KuaiShou (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Line (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/LinkedIn (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Messenger (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/MingDao (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Oasis (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Pinterest (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Pocket (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Reddit (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/SMS (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/SnapChat (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Telegram (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/TikTok (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Twitter (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/VKontakte (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/WatermelonVideo (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/WeChat (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/WhatsApp (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Yixin (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/YouDaoNote (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKRestoreScene (4.4.2):
+    - mob_sharesdk/ShareSDKExtension
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKUI (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - MOBFoundation (3.2.27)
+  - share_sdk (0.0.1):
+    - Flutter
+    - mob_sharesdk
+    - mob_sharesdk/ShareSDKExtension
+    - mob_sharesdk/ShareSDKPlatforms/DingTalk
+    - mob_sharesdk/ShareSDKPlatforms/Douyin
+    - mob_sharesdk/ShareSDKPlatforms/Dropbox
+    - mob_sharesdk/ShareSDKPlatforms/Evernote
+    - mob_sharesdk/ShareSDKPlatforms/Facebook
+    - mob_sharesdk/ShareSDKPlatforms/Flickr
+    - mob_sharesdk/ShareSDKPlatforms/GooglePlus
+    - mob_sharesdk/ShareSDKPlatforms/Instagram
+    - mob_sharesdk/ShareSDKPlatforms/Instapaper
+    - mob_sharesdk/ShareSDKPlatforms/Kakao
+    - mob_sharesdk/ShareSDKPlatforms/KuaiShou
+    - mob_sharesdk/ShareSDKPlatforms/Line
+    - mob_sharesdk/ShareSDKPlatforms/LinkedIn
+    - mob_sharesdk/ShareSDKPlatforms/Messenger
+    - mob_sharesdk/ShareSDKPlatforms/MingDao
+    - mob_sharesdk/ShareSDKPlatforms/Oasis
+    - mob_sharesdk/ShareSDKPlatforms/Pinterest
+    - mob_sharesdk/ShareSDKPlatforms/Pocket
+    - mob_sharesdk/ShareSDKPlatforms/QQ
+    - mob_sharesdk/ShareSDKPlatforms/Reddit
+    - mob_sharesdk/ShareSDKPlatforms/SinaWeibo
+    - mob_sharesdk/ShareSDKPlatforms/SMS
+    - mob_sharesdk/ShareSDKPlatforms/SnapChat
+    - mob_sharesdk/ShareSDKPlatforms/Telegram
+    - mob_sharesdk/ShareSDKPlatforms/TikTok
+    - mob_sharesdk/ShareSDKPlatforms/Twitter
+    - mob_sharesdk/ShareSDKPlatforms/VKontakte
+    - mob_sharesdk/ShareSDKPlatforms/WatermelonVideo
+    - mob_sharesdk/ShareSDKPlatforms/WeChat
+    - mob_sharesdk/ShareSDKPlatforms/WhatsApp
+    - mob_sharesdk/ShareSDKPlatforms/Yixin
+    - mob_sharesdk/ShareSDKPlatforms/YouDaoNote
+    - mob_sharesdk/ShareSDKRestoreScene
+    - mob_sharesdk/ShareSDKUI
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - share_sdk (from `.symlinks/plugins/share_sdk/ios`)
+
+SPEC REPOS:
+  trunk:
+    - mob_sharesdk
+    - MOBFoundation
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  share_sdk:
+    :path: ".symlinks/plugins/share_sdk/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  mob_sharesdk: a60006891a079486ff3269ed326adfa05a967c01
+  MOBFoundation: efdc3ce6b843fbc10ae8c1c6122a02b0d845b39b
+  share_sdk: fdbaf7f41d2bf1d67d16f2dde4397d78120165b5
+
+PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+
+COCOAPODS: 1.11.0
