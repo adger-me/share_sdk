@@ -8,14 +8,14 @@ class SSDKError extends Error {
       : code = rawData != null ? rawData["code"] : 0,
         userInfo = rawData != null ? rawData["userInfo"] : {},
         super();
-  final dynamic? rawData;
+  final dynamic rawData;
   final int? code;
-  final dynamic? userInfo;
+  final dynamic userInfo;
 }
 
 /// model for method
 class ShareSDKMethod {
-  ShareSDKMethod({@required this.name, @required this.id})
+  ShareSDKMethod({required this.name, required this.id})
       : assert(name != null && id != null),
         super();
   final String? name;
@@ -24,37 +24,23 @@ class ShareSDKMethod {
 
 /// method defines
 class ShareSDKMethods {
-  static final ShareSDKMethod getVersion =
-      ShareSDKMethod(name: "getVersion", id: 0);
+  static final ShareSDKMethod getVersion = ShareSDKMethod(name: "getVersion", id: 0);
   static final ShareSDKMethod share = ShareSDKMethod(name: "share", id: 1);
   static final ShareSDKMethod auth = ShareSDKMethod(name: "auth", id: 2);
-  static final ShareSDKMethod hasAuthed =
-      ShareSDKMethod(name: "hasAuthed", id: 3);
-  static final ShareSDKMethod cancelAuth =
-      ShareSDKMethod(name: "cancelAuth", id: 4);
-  static final ShareSDKMethod getUserInfo =
-      ShareSDKMethod(name: "getUserInfo", id: 5);
+  static final ShareSDKMethod hasAuthed = ShareSDKMethod(name: "hasAuthed", id: 3);
+  static final ShareSDKMethod cancelAuth = ShareSDKMethod(name: "cancelAuth", id: 4);
+  static final ShareSDKMethod getUserInfo = ShareSDKMethod(name: "getUserInfo", id: 5);
   static final ShareSDKMethod regist = ShareSDKMethod(name: "regist", id: 6);
-  static final ShareSDKMethod showMenu =
-      ShareSDKMethod(name: "showMenu", id: 7);
-  static final ShareSDKMethod showEditor =
-      ShareSDKMethod(name: "showEditor", id: 8);
-  static final ShareSDKMethod openMiniProgram =
-      ShareSDKMethod(name: "openMiniProgram", id: 9);
-  static final ShareSDKMethod activePlatforms =
-      ShareSDKMethod(name: "activePlatforms", id: 10);
-  static final ShareSDKMethod isClientInstalled =
-      ShareSDKMethod(name: "isClientInstalled", id: 11);
-  static final ShareSDKMethod uploadPrivacyPermissionStatus =
-      ShareSDKMethod(name: "uploadPrivacyPermissionStatus", id: 12);
-  static final ShareSDKMethod setAllowShowPrivacyWindow =
-      ShareSDKMethod(name: "setAllowShowPrivacyWindow", id: 13);
-  static final ShareSDKMethod getPrivacyPolicy =
-      ShareSDKMethod(name: "getPrivacyPolicy", id: 14);
-  static final ShareSDKMethod setPrivacyUI =
-      ShareSDKMethod(name: "setPrivacyUI", id: 15);
-  static final ShareSDKMethod shareWithActivity =
-      ShareSDKMethod(name: "shareWithActivity", id: 16);
+  static final ShareSDKMethod showMenu = ShareSDKMethod(name: "showMenu", id: 7);
+  static final ShareSDKMethod showEditor = ShareSDKMethod(name: "showEditor", id: 8);
+  static final ShareSDKMethod openMiniProgram = ShareSDKMethod(name: "openMiniProgram", id: 9);
+  static final ShareSDKMethod activePlatforms = ShareSDKMethod(name: "activePlatforms", id: 10);
+  static final ShareSDKMethod isClientInstalled = ShareSDKMethod(name: "isClientInstalled", id: 11);
+  static final ShareSDKMethod uploadPrivacyPermissionStatus = ShareSDKMethod(name: "uploadPrivacyPermissionStatus", id: 12);
+  static final ShareSDKMethod setAllowShowPrivacyWindow = ShareSDKMethod(name: "setAllowShowPrivacyWindow", id: 13);
+  static final ShareSDKMethod getPrivacyPolicy = ShareSDKMethod(name: "getPrivacyPolicy", id: 14);
+  static final ShareSDKMethod setPrivacyUI = ShareSDKMethod(name: "setPrivacyUI", id: 15);
+  static final ShareSDKMethod shareWithActivity = ShareSDKMethod(name: "shareWithActivity", id: 16);
 }
 
 class ShareSDKPlatform {
@@ -68,35 +54,23 @@ class ShareSDKPlatform {
 /// supported platform defines
 class ShareSDKPlatforms {
   static final ShareSDKPlatform sina = ShareSDKPlatform(name: "sina", id: 1);
-  static final ShareSDKPlatform tencentWeibo =
-      ShareSDKPlatform(name: "tencentWeibo", id: 2);
-  static final ShareSDKPlatform douBan =
-      ShareSDKPlatform(name: "douBan", id: 5);
+  static final ShareSDKPlatform tencentWeibo = ShareSDKPlatform(name: "tencentWeibo", id: 2);
+  static final ShareSDKPlatform douBan = ShareSDKPlatform(name: "douBan", id: 5);
   static final ShareSDKPlatform qZone = ShareSDKPlatform(name: "qZone", id: 6);
-  static final ShareSDKPlatform renren =
-      ShareSDKPlatform(name: "renren", id: 7);
-  static final ShareSDKPlatform kaixin =
-      ShareSDKPlatform(name: "kaixin", id: 8);
-  static final ShareSDKPlatform facebook =
-      ShareSDKPlatform(name: "facebook", id: 10);
-  static final ShareSDKPlatform twitter =
-      ShareSDKPlatform(name: "twitter", id: 11);
-  static final ShareSDKPlatform yinXiang =
-      ShareSDKPlatform(name: "yinXiang", id: 12);
-  static final ShareSDKPlatform googlePlus =
-      ShareSDKPlatform(name: "googlePlus", id: 14);
-  static final ShareSDKPlatform instagram =
-      ShareSDKPlatform(name: "instagram", id: 15);
-  static final ShareSDKPlatform linkedIn =
-      ShareSDKPlatform(name: "linkedIn", id: 16);
-  static final ShareSDKPlatform tumblr =
-      ShareSDKPlatform(name: "tumblr", id: 17);
+  static final ShareSDKPlatform renren = ShareSDKPlatform(name: "renren", id: 7);
+  static final ShareSDKPlatform kaixin = ShareSDKPlatform(name: "kaixin", id: 8);
+  static final ShareSDKPlatform facebook = ShareSDKPlatform(name: "facebook", id: 10);
+  static final ShareSDKPlatform twitter = ShareSDKPlatform(name: "twitter", id: 11);
+  static final ShareSDKPlatform yinXiang = ShareSDKPlatform(name: "yinXiang", id: 12);
+  static final ShareSDKPlatform googlePlus = ShareSDKPlatform(name: "googlePlus", id: 14);
+  static final ShareSDKPlatform instagram = ShareSDKPlatform(name: "instagram", id: 15);
+  static final ShareSDKPlatform linkedIn = ShareSDKPlatform(name: "linkedIn", id: 16);
+  static final ShareSDKPlatform tumblr = ShareSDKPlatform(name: "tumblr", id: 17);
   static final ShareSDKPlatform mail = ShareSDKPlatform(name: "mail", id: 18);
   static final ShareSDKPlatform sms = ShareSDKPlatform(name: "sms", id: 19);
   static final ShareSDKPlatform print = ShareSDKPlatform(name: "print", id: 20);
   static final ShareSDKPlatform copy = ShareSDKPlatform(name: "copy", id: 21);
-  static final ShareSDKPlatform wechatSession =
-      ShareSDKPlatform(name: "wechatSession", id: 22);
+  static final ShareSDKPlatform wechatSession = ShareSDKPlatform(name: "wechatSession", id: 22);
   static final ShareSDKPlatform wechatTimeline =
       ShareSDKPlatform(name: "wechatTimeline", id: 23);
   static final ShareSDKPlatform qq = ShareSDKPlatform(name: "qq", id: 24);

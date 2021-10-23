@@ -1,4 +1,4 @@
-import './sharesdk_defines.dart';
+import 'sharesdk_defines.dart';
 
 /// const
 const String kText = "text";

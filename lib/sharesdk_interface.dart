@@ -4,35 +4,28 @@ import './sharesdk_defines.dart';
 import './sharesdk_register.dart';
 import './sharesdk_map.dart';
 
-typedef void EventHandler(dynamic event);
+typedef EventHandler = void Function(dynamic event);
 
-class SharesdkPlugin {
-  static const MethodChannel _channel =
-      const MethodChannel('com.yoozoo.mob/sharesdk');
+class ShareSDKPlugin {
+  static const MethodChannel _channel = MethodChannel('share_sdk');
 
-  static EventChannel _channelReciever =
-      const EventChannel('SSDKRestoreReceiver');
+  static const EventChannel _channelReciever = EventChannel('SSDKRestoreReceiver');
 
   /// 注册方法：
   /// 1. 创建register对象，
   /// 2. 通过register对象的函数设置平台参数，
   /// 3. 通过register注册
   static Future<dynamic> regist(ShareSDKRegister register) async {
-    return await _channel.invokeMethod(
-        ShareSDKMethods.regist.name!, register.platformsInfo);
+    return await _channel.invokeMethod(ShareSDKMethods.regist.name!, register.platformsInfo);
   }
 
   /// 分享
   static Future<dynamic> share(ShareSDKPlatform platform, SSDKMap params,
       Function(SSDKResponseState, dynamic, dynamic, SSDKError) result) {
     Map args = {"platform": platform.id, "params": params.map};
-    Future<dynamic> callback =
-        _channel.invokeMethod(ShareSDKMethods.share.name!, args);
+    Future<dynamic> callback = _channel.invokeMethod(ShareSDKMethods.share.name!, args);
     callback.then((dynamic response) {
-      if (result != null) {
-        result(_state(response), response["userData"],
-            response["contentEntity"], SSDKError(rawData: response["error"]));
-      }
+      result(_state(response), response["userData"], response["contentEntity"], SSDKError(rawData: response["error"]));
     });
 
     return callback;
@@ -45,9 +38,7 @@ class SharesdkPlugin {
     Future<dynamic> callback =
         _channel.invokeMethod(ShareSDKMethods.shareWithActivity.name!, args);
     callback.then((dynamic response) {
-      if (result != null) {
-        result(_state(response), response["userData"], response["contentEntity"], SSDKError(rawData: response["error"]));
-      }
+      result(_state(response), response["userData"], response["contentEntity"], SSDKError(rawData: response["error"]));
     });
 
     return callback;
@@ -61,23 +52,17 @@ class SharesdkPlugin {
         _channel.invokeMethod(ShareSDKMethods.auth.name!, args);
     callback.then((dynamic response) {
       print('======> $callback !' + '~~~~~> $response');
-      if (result != null) {
-        result(_state(response), response["user"], SSDKError(rawData: response["error"]));
-      }
+      result(_state(response), response["user"], SSDKError(rawData: response["error"]));
     });
 
     return callback;
   }
 
   /// 判断是否授权
-  static Future<dynamic> hasAuthed(ShareSDKPlatform platform,
-      Function(SSDKResponseState, dynamic, SSDKError) result) {
-    Future<dynamic> callback =
-        _channel.invokeMethod(ShareSDKMethods.hasAuthed.name!, platform.id);
+  static Future<dynamic> hasAuthed(ShareSDKPlatform platform, Function(SSDKResponseState, dynamic, SSDKError) result) {
+    Future<dynamic> callback = _channel.invokeMethod(ShareSDKMethods.hasAuthed.name!, platform.id);
     callback.then((dynamic response) {
-      if (result != null) {
-        result(_state(response), response["user"], SSDKError(rawData: response["error"]));
-      }
+      result(_state(response), response["user"], SSDKError(rawData: response["error"]));
     });
     return callback;
   }
@@ -88,9 +73,7 @@ class SharesdkPlugin {
     Future<dynamic> callback =
         _channel.invokeMethod(ShareSDKMethods.cancelAuth.name!, platform.id);
     callback.then((dynamic response) {
-      if (result != null) {
-        result(_state(response), response["user"], SSDKError(rawData: response["error"]));
-      }
+      result(_state(response), response["user"], SSDKError(rawData: response["error"]));
     });
     return callback;
   }
@@ -102,9 +85,7 @@ class SharesdkPlugin {
     Future<dynamic> callback =
         _channel.invokeMethod(ShareSDKMethods.getUserInfo.name!, args);
     callback.then((dynamic response) {
-      if (result != null) {
-        result(_state(response), response["user"], SSDKError(rawData: response["error"]));
-      }
+      result(_state(response), response["user"], SSDKError(rawData: response["error"]));
     });
 
     return callback;
@@ -115,8 +96,7 @@ class SharesdkPlugin {
       dynamic view,
       List<ShareSDKPlatform>? platforms,
       SSDKMap params,
-      Function(SSDKResponseState, ShareSDKPlatform, dynamic, dynamic, SSDKError)?
-          result) {
+      Function(SSDKResponseState, ShareSDKPlatform, dynamic, dynamic, SSDKError)? result) {
     List? types;
     if (platforms != null) {
       Iterable<int> ids = platforms.map((ShareSDKPlatform item) => item.id!);
@@ -124,8 +104,7 @@ class SharesdkPlugin {
     }
 
     Map args = {"platforms": types, "params": params.map, "view":view};
-    Future<dynamic> callback =
-        _channel.invokeMethod(ShareSDKMethods.showMenu.name!, args);
+    Future<dynamic> callback = _channel.invokeMethod(ShareSDKMethods.showMenu.name!, args);
     callback.then((dynamic response) {
       if (result != null) {
         result(_state(response), ShareSDKPlatform(id: response["platform"], name: "null"), response["userData"], response["contentEntity"], SSDKError(rawData: response["error"]));
@@ -165,9 +144,7 @@ class SharesdkPlugin {
         _channel.invokeMethod(ShareSDKMethods.getPrivacyPolicy.name!, args);
     callback.then((dynamic response) {
       print(response);
-      if (result != null) {
-        result(response["data"], response["error"]);
-      }
+      result(response["data"], response["error"]);
     });
     return callback;
   }
@@ -180,8 +157,7 @@ class SharesdkPlugin {
         ShareSDKMethods.uploadPrivacyPermissionStatus.name!, args);
     callback.then((dynamic response) {
       print(response);
-      if (result != null) {result(response["success"]);
-      }
+      result(response["success"]);
     });
     return callback;
   }
@@ -224,7 +200,6 @@ class SharesdkPlugin {
         state = SSDKResponseState.Cancel;
         break;
     }
-
     return state;
   }
 

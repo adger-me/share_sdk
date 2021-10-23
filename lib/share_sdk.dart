@@ -4,10 +4,10 @@ import 'package:flutter/services.dart';
 import 'package:share_sdk/sharesdk_defines.dart';
 import 'package:share_sdk/sharesdk_map.dart';
 import 'package:share_sdk/sharesdk_register.dart';
-export './sharesdk_defines.dart';
-export './sharesdk_interface.dart';
-export './sharesdk_map.dart';
-export './sharesdk_register.dart';
+export 'sharesdk_defines.dart';
+export 'sharesdk_interface.dart';
+export 'sharesdk_map.dart';
+export 'sharesdk_register.dart';
 
 typedef EventHandler = void Function(dynamic event);
 
